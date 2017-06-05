@@ -584,7 +584,7 @@
  * Use G29 repeatedly, adjusting the Z height at each point with movement commands
  * or (with LCD_BED_LEVELING) the LCD controller.
  */
-//#define PROBE_MANUALLY
+#define PROBE_MANUALLY
 
 /**
  * A Fix-Mounted Probe either doesn't deploy or needs manual deployment.
@@ -595,8 +595,8 @@
 /**
  * Z Servo Probe, such as an endstop switch on a rotating arm.
  */
-#define Z_ENDSTOP_SERVO_NR 0   // Defaults to SERVO 0 connector.
-#define Z_SERVO_ANGLES {92,10}  // Z Servo Deploy and Stow angles
+//#define Z_ENDSTOP_SERVO_NR 0   // Defaults to SERVO 0 connector.
+//#define Z_SERVO_ANGLES {92,10}  // Z Servo Deploy and Stow angles
 
 /**
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
@@ -811,7 +811,7 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR
+#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
@@ -860,7 +860,7 @@
     //#define ABL_BILINEAR_SUBDIVISION
     #if ENABLED(ABL_BILINEAR_SUBDIVISION)
       // Number of subdivisions between probe points
-      #define BILINEAR_SUBDIVISIONS 3
+      #define BILINEAR_SUBDIVISIONS 2
     #endif
 
   #endif
