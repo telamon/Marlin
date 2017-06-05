@@ -7,7 +7,7 @@ This fork of marlin is an adaption for my GT2560 board that was bundled with
 a Geeetech Prusa I3 Pro B printer. It's work in progress so use it at your own risk.
 
 But seriously if you want to use it on a stock Geeetech prusa then you
-will have to `E-steps` to 93, and invert the direction back to a direct-drive mode for the stock mk8-extruder.
+will have to set `E-steps` to 93, and invert the direction back to a direct-drive mode for the stock mk8-extruder as I've upgraded mine with a geared extruder.
 And optionally configure the auto-level features but that shouldn't be necessary as they're set to manual.
 
 ## Marlin 1.1
