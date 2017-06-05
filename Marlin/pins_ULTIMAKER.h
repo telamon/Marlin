@@ -45,7 +45,7 @@
 //
 // Servos
 //
-#define SERVO0_PIN         13 // untested
+#define SERVO0_PIN         11 // untested
 
 //
 // Limit Switches
@@ -110,7 +110,7 @@
 #define LED_PIN            13
 #define PS_ON_PIN          12
 #define SUICIDE_PIN        54  // PIN that has to be turned on right after start, to keep power flowing.
-#define CASE_LIGHT_PIN      8
+#define CASE_LIGHT_PIN     -1 // 8
 
 //
 // LCD / Controller
@@ -159,6 +159,6 @@
 //
 // M3/M4/M5 - Spindle/Laser Control
 //
-#define SPINDLE_LASER_PWM_PIN     9  // MUST BE HARDWARE PWM
-#define SPINDLE_LASER_ENABLE_PIN 10  // Pin should have a pullup!
-#define SPINDLE_DIR_PIN          11  // use the EXP3 PWM header
+#define SPINDLE_LASER_PWM_PIN     -1 //19  // MUST BE HARDWARE PWM
+#define SPINDLE_LASER_ENABLE_PIN  -1 //10  // Pin should have a pullup!
+#define SPINDLE_DIR_PIN          -1  //11  // use the EXP3 PWM header
