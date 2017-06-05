@@ -1,6 +1,15 @@
 # Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
 
+## GT2560
+
+This fork of marlin is an adaption for my GT2560 board that was bundled with
+a Geeetech Prusa I3 Pro B printer. It's work in progress so use it at your own risk.
+
+But seriously if you want to use it on a stock Geeetech prusa then you
+will have to `E-steps` to 93, and invert the direction back to a direct-drive mode for the stock mk8-extruder.
+And optionally configure the auto-level features but that shouldn't be necessary as they're set to manual.
+
 ## Marlin 1.1
 
 Marlin 1.1 represents an evolutionary leap over Marlin 1.0.2. It is the result of over two years of effort by several volunteers around the world who have paid meticulous and sometimes obsessive attention to every detail. For this release we focused on code quality, performance, stability, and overall user experience. Several new features have also been added, many of which require no extra hardware.
