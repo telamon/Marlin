@@ -498,7 +498,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 400, 400, 5, 45 }
+#define DEFAULT_MAX_FEEDRATE          { 400, 350, 5, 45 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -506,7 +506,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 3000, 2000, 100, 5000 }
+#define DEFAULT_MAX_ACCELERATION      { 3000, 1800, 50, 5000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -529,7 +529,7 @@
  * value set here, it may happen instantaneously.
  */
 #define DEFAULT_XJERK                 20.0
-#define DEFAULT_YJERK                 20.0
+#define DEFAULT_YJERK                 30.0
 #define DEFAULT_ZJERK                  0.4
 #define DEFAULT_EJERK                  5.0
 
@@ -811,7 +811,7 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-#define AUTO_BED_LEVELING_BILINEAR
+//#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
